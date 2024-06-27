@@ -697,10 +697,10 @@ source('~/Functions/str.R', echo = F)
 assign("StrAll", value = function(object) str(object, max.level = Inf, list.len = Inf), envir = VVMisc)
 
 #### plot.info: mirt plot information for ggplot2 #####
-source('~/Functions/plot.info.R', echo = F)
+source('~/Functions/GetPlotInfo-mirt.r' echo = F)
 
 ##### plotnScree.info: nFactors plot information for ggplot2 #####
-source('~/Functions/plotnScree.info.R', echo = F) |> suppressWarnings()
+source('~/Functions/GetPlotInfo-nFactors.r', echo = F) |> suppressWarnings()
 
 ##### data.table::fread #####
 source("~/Functions/data.table-fread.R", echo = F)
